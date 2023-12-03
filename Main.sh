@@ -7,7 +7,7 @@ pipeline {
         stage('Execute sh Script'){
             steps{
                 script{
-                    bat 'helloworld.sh'
+                    bat 'mkdir newfolder'
                 }
             }
         }
