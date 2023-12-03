@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Execute sh Script'){
             steps{
-                echo $pwd
+                def directory = pwd()
+                echo ${directory}
             }
         }
     }
