@@ -7,7 +7,7 @@ pipeline {
         stage('Execute sh Script'){
             steps{
                 script{
-                    sh 'mkdir newfolder'
+                    bash 'ls'
                 }
             }
         }
