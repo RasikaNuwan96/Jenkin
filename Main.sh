@@ -7,9 +7,7 @@ pipeline {
         stage('Execute sh Script'){
             steps{
                 script{
-                    def directory = pwd()
-                    echo "${directory}"
-                    bat 'dir'
+                    bat 'helloworld.sh'
                 }
             }
         }
