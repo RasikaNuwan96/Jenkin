@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Execute sh Script'){
             steps{
-                sh './helloworld.sh'
+                echo $pwd
             }
         }
     }
