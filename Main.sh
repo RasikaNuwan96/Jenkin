@@ -9,7 +9,7 @@ pipeline {
                 script{
                     def directory = pwd()
                     echo "${directory}"
-                    sh ''dir
+                    sh 'dir'
                 }
             }
         }
