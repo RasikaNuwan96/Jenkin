@@ -6,9 +6,9 @@ pipeline {
     stages {
         stage('Execute sh Script'){
             steps{
-                Script{
+                script{
                     def directory = pwd()
-                    echo ${directory}
+                    echo "${directory}"
                 }
             }
         }
