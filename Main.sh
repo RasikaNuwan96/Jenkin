@@ -16,7 +16,7 @@ pipeline {
         stage('Execute the script'){
             steps{
                 script{
-                    bat 'bash ./helloworld.sh'
+                    bat '"C://Program Files//Git//bin//bash.exe" ./helloworld.sh''
                 }
             }
         }
