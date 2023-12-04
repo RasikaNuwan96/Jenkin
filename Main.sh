@@ -17,7 +17,8 @@ pipeline {
         stage('Execute the script'){
             steps{
                 script{
-                    bat 'bash ./helloworld.sh'
+                    bat 'sh'
+                    sh './helloworld.sh'
                 }
             }
         }
