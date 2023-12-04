@@ -11,9 +11,7 @@ pipeline {
                 }
             }
         }
-    }
-
-    stages {
+        
         stage('Execute the script'){
             steps{
                 script{
