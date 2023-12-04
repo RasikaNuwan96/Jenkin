@@ -7,11 +7,12 @@ pipeline {
         stage('Read the directory'){
             steps{
                 script{
-                    echo $chdir
+                    def path = pwd()
+                    echo "${path}"
                 }
             }
         }
-        
+
         stage('Execute the script'){
             steps{
                 script{
