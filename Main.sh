@@ -9,7 +9,7 @@ pipeline {
                 script{
                     def path = pwd()
                     echo "${path}"
-                    bat 'bash ls'
+                    bat 'dir'
                 }
             }
         }
