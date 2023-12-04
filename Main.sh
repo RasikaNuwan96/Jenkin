@@ -4,10 +4,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Execute sh Script'){
+        stage('Read the directory'){
             steps{
                 script{
-                    bash 'ls'
+                    echo $chdir
+                }
+            }
+        }
+    }
+
+    stages {
+        stage('Execute the script'){
+            steps{
+                script{
+                    bat '"C:\Program Files\Git\bin/\bash.exe -c" helloworld.sh'
                 }
             }
         }
